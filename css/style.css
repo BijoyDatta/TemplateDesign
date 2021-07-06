@@ -30,8 +30,8 @@ p,a,li,button{
   color: var(--primry-color);
 }
 p{
-  font-size: 1.8rem;
-  line-height: 150%;
+  font-size: 1.3rem;
+  line-height: 120%;
   font-style: normal;
   font-weight: normal;
 }
@@ -113,6 +113,9 @@ header nav .right-side .sub-menu a{
   
   border-radius: 1rem;
   line-height: inherit;
+  position: relative;
+  z-index: 10;
+
 }
 
 header nav .right-side .sub-menu button{
@@ -120,6 +123,8 @@ header nav .right-side .sub-menu button{
   color: #fff;
   padding: 0.5rem 2.5rem;
   transition: all 0.2s;
+  position: relative;
+  z-index: 10;
 
 }
 header nav .right-side .sub-menu button:hover{
@@ -127,5 +132,61 @@ header nav .right-side .sub-menu button:hover{
 }
 header nav .right-side .sub-menu a:hover{
   color: var(--button-background);
+}
+/*------------------------------------- our main hero section started from here *
+--------------------------------------------------------------------------------------------------------------*/
+/*------------------------------ .left-side */
+.main-hero{
+  padding: 0rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-hero .left-side{
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-hero .left-side h1{
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+  width: 45rem;
+}
+.main-hero .left-side p{
+  margin-bottom: 3rem;
+  width: 35rem;
+}
+.main-hero .left-side .icon{
+  display: flex;
+  justify-content: flex-start;
+}
+.main-hero .left-side a img {
+  width: 12rem;
+  
+}
+.main-hero .left-side #appale img{
+  margin-right: 3rem;
+}
+/*-------------------------------------- .right-side */
+.main-hero .right-side{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#c3d6ec79 ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 60px 10px 0px 60px;
+}
+.main-hero .right-side img {
+  width: 65rem;
+  margin-top: 10rem;
+  margin-right: 30rem;
 }
 
